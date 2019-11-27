@@ -125,7 +125,7 @@ def prepare_data(alpha=0.2, nb_pics=0.2, size=128, border=0):
         img = image_format(k1, border, size)
         img = img.save('Data/Test/' + train['ImageId'][k1] + '.jpg')
     # création du jeu de val
-    for k1 in liste_index_va1l:
+    for k1 in liste_index_val1:
         img = image_format(k1, border, size)
         img = img.save('Data/Val/' + train['ImageId'][k1] + '.jpg')
     return liste_index_train1, liste_index_test1, liste_index_val1
